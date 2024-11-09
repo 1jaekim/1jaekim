@@ -1,0 +1,22 @@
+number = int(input())
+stack = []
+for i in range(number):
+    a = input()
+    if a == 'top':
+        if stack:
+            print(stack[-1])
+        else:
+            print(-1)
+    elif a == 'empty':
+        print(1 if not stack else 0)
+    elif a == 'size':
+        print(len(stack))
+    elif a == 'pop':
+        if stack:
+            print(stack.pop())
+        else:
+            print(-1)
+    else:
+        b = int(a.split()[1])
+        stack.append(b)
+# time complexity problem
