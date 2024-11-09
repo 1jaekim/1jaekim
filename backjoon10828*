@@ -19,4 +19,4 @@ for i in range(number):
     else:
         b = int(a.split()[1])
         stack.append(b)
-# time complexity problem
+
